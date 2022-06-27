@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="chromatic_colors.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <title>CSS Colours Cheat Sheet</title>
+</head>
+<body>
+  <header>
+    <h1>CSS Colours Cheatsheet</h1>
+    <button><a href="https://www.canva.com/colors/color-wheel/" target="_blank">Canva colour wheel</a></button>
+    <img src="color-wheel_0.jpg" alt="a colour wheel">
+  </header>
+
+  <main>
+    <section>
+      <h2>Primary Colours</h2>
+      <ul>
+        <li>In the <em>Additive RGB Color Model</em> primary colors are those colors when adding together produce white</li>
+        <li>Each color must be at its highest intensity. For this to happen we use the rgb function with the parameters as red, green and blue</li>
+        <li>Using the primary function in CSS is choosing an additive system. The function starts at rgb(0,0,0) 
+          which is black rgb(0,0,0). You increase the colors of each parameter up to 255 away from black or adding to black. When all colors
+          are <em>added</em> to their highest intensity we get white rgb(0,0,0)</li>
+      </ul>
+
+      <div class="container">
+        <div class="markers red"></div>
+        <div class="markers green"></div>
+        <div class="markers blue"></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Secondary Colours</h2>
+      <ul>
+        <li>These are the colors you get when you combine primary colours</li>
+        <li>yellow: rgb(255, 255, 0)</li>
+        <li>cyan: rgb(0, 255, 255)</li>
+        <li>magenta: rgb(255, 0, 255)</li>
+      </ul>
+      
+      <div class="container">
+        <div class="markers yellow"></div>
+        <div class="markers cyan"></div>
+        <div class="markers magenta"></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Tertiary Colours</h2>
+      <ul>
+        <li>These are the colors you get when you combine primary colour with a nearby secondary colour</li>
+        <li>orange rgb(255, 127, 0) is made from high(full) intensity red and a decreased intensity of green.
+          This is because orange is a combination of red and yellow and falls between these colours in the colour wheel.
+        </li>
+        <li>spring green (cyan and green): rgb(0, 255, 127)</li>
+        <li>violet (blue and magenta I think): rgb(127, 0, 255)</li>
+      </ul>
+      
+      <div class="container">
+        <div class="markers orange"></div>
+        <div class="markers spring-green"></div>
+        <div class="markers violet"></div>
+      </div>
+
+      <ul>
+        <li>chartreuse green(green and yellow): rgb(127, 255, 0)</li>
+        <li>azure (blue and cyan): rgb(0, 127, 255)</li>
+        <li>Rose(red and magenta): rgb(255, 0, 127)</li>
+      </ul>
+
+      <div class="container">
+        <div class="markers chartreuse-green"></div>
+        <div class="markers azure"></div>
+        <div class="markers rose"></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Complementary Colours</h2>
+      <ul>
+        <li>Two colours that are on opposite sides of the colour wheel</li>
+        <li>If two complementary colours are combined they produce grey</li>
+        <li>When two complementary colours are placed side by side they provide string visual contrast and appear brighter</li>
+      </ul>
+
+      <p>*** Notice that the red and cyan colors are very bright right next to each other. This contrast can be distracting if it's overused on a website, and can make text hard to read if it's placed on a complementary-colored background.
+
+        It's better practice to choose one color as the dominant color, and use its complementary color as an accent to bring attention to certain content on the page.
+        
+         ***</p>
+
+      <p>We use complementary colours to attract the readers attention to certain parts of the webpage.</p>
+
+      <div class="container">
+        <div class="markers red">RED</div>
+        <div class="markers cyan">CYAN</div>
+        <div class="markers black"></div>
+      </div>
+    </section>
+  </main>
+  
+  <footer>
+    <section>
+      <p>Page colour icon by:</p>
+      <a href="https://www.flaticon.com/free-icons/circle" title="circle icons">Circle icons created by Freepik - Flaticon</a>
+    </section>
+  </footer>
+</body>
+</html>
