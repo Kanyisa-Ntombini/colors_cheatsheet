@@ -61,3 +61,8 @@ img {
 .rose {
   background-color: rgb(255, 0, 127);
 }
+
+/* HSL */
+.hue-wheel {
+  width: 17rem;
+}
