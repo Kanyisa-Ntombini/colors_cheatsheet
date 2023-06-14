@@ -6,14 +6,20 @@ img {
 
 .container {
   border: 0.1rem solid black;
-  width: 20rem;
+  width: 30rem;
   margin: auto;
 }
 
 .markers {
-  width: 15rem;
-  height: 2rem;
+  width:  10rem;
+  height: 2.5rem;
   margin: 1rem auto;
+  font-size: 1.25rem;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .black {
