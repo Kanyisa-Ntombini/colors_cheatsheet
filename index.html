@@ -1,129 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="./resources/images/chromatic_colors.ico" type="image/x-icon">
-  <link rel="stylesheet" href="style.css">
-  <title>CSS Colours Cheat Sheet</title>
-</head>
-<body>
-  <header>
-    <h1>CSS Colours Cheatsheet</h1>
-    <button><a href="https://www.canva.com/colors/color-wheel/" target="_blank">Canva colour wheel</a></button>
-    <img src="./resources/images/color-wheel_0.jpg" alt="a colour wheel">
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./resources/images/chromatic_colors.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>CSS Colours Cheat Sheet</title>
+  </head>
+  <body>
+    <header>
+      <h1>CSS Colours Cheatsheet</h1>
+    </header>
 
-  <main>
-    <section>
-      <h2>Primary Colours</h2>
-      <ul>
-        <li>In the <em>Additive RGB Color Model</em> primary colors are those colors when adding together produce white</li>
-        <li>Each color must be at its highest intensity. For this to happen we use the rgb function with the parameters as red, green and blue</li>
-        <li>Using the primary function in CSS is choosing an additive system. The function starts at rgb(0,0,0) 
-          which is black rgb(0,0,0). You increase the colors of each parameter up to 255 away from black or adding to black. When all colors
-          are <em>added</em> to their highest intensity we get white rgb(0,0,0)</li>
-      </ul>
+    <main>
+      <section>
+        <h2>Additive RGB Model</h2>
+        <ul>
+          <li>RGB (red, green, blue)</li>
+          <li>All colors begin as black i.e. rgb(0,0,0)</li>
+        </ul>
 
-      <div class="container">
-        <div class="markers red"></div>
-        <div class="markers green"></div>
-        <div class="markers blue"></div>
-      </div>
-    </section>
+        <div>
+          <h3>Primary Colours</h3>
+          <ul>
+            <li>Colors that, when combined create pure white</li>
+            <li>Each color must be at its maximum intensity.</li>
+          </ul>
 
-    <section>
-      <h2>Secondary Colours</h2>
-      <ul>
-        <li>These are the colors you get when you combine primary colours</li>
-        <li>yellow: rgb(255, 255, 0)</li>
-        <li>cyan: rgb(0, 255, 255)</li>
-        <li>magenta: rgb(255, 0, 255)</li>
-      </ul>
-      
-      <div class="container">
-        <div class="markers yellow"></div>
-        <div class="markers cyan"></div>
-        <div class="markers magenta"></div>
-      </div>
-    </section>
+          <div class="container">
+            <div class="markers red">red</div>
+            <div class="markers green">green</div>
+            <div class="markers blue">blue</div>
+          </div>
+        </div>
 
-    <section>
-      <h2>Tertiary Colours</h2>
-      <ul>
-        <li>These are the colors you get when you combine primary colour with a nearby secondary colour</li>
-        <li>orange rgb(255, 127, 0) is made from high(full) intensity red and a decreased intensity of green.
-          This is because orange is a combination of red and yellow and falls between these colours in the colour wheel.
-        </li>
-        <li>spring green (cyan and green): rgb(0, 255, 127)</li>
-        <li>violet (blue and magenta I think): rgb(127, 0, 255)</li>
-      </ul>
-      
-      <div class="container">
-        <div class="markers orange"></div>
-        <div class="markers spring-green"></div>
-        <div class="markers violet"></div>
-      </div>
+        <div>
+          <h2>Secondary Colours</h2>
+          <ul>
+            <li>
+              These are the colors you get when you combine primary colours
+            </li>
+            <li>red + green = yellow rgb (255, 255, 0)</li>
+            <li>blue + green = cyan rgb (0, 255, 255)</li>
+            <li>red + blue = magenta rgb (255, 0, 255)</li>
+          </ul>
 
-      <ul>
-        <li>chartreuse green(green and yellow): rgb(127, 255, 0)</li>
-        <li>azure (blue and cyan): rgb(0, 127, 255)</li>
-        <li>Rose(red and magenta): rgb(255, 0, 127)</li>
-      </ul>
+          <div class="container">
+            <div class="markers yellow">yellow</div>
+            <div class="markers cyan">cyan</div>
+            <div class="markers magenta">magenta</div>
+          </div>
+        </div>
 
-      <div class="container">
-        <div class="markers chartreuse-green"></div>
-        <div class="markers azure"></div>
-        <div class="markers rose"></div>
-      </div>
-    </section>
+        <div>
+          <h2>Tertiary Colours</h2>
+          <ul>
+            <li>
+              These are the colors you get when you combine primary colour with
+              a nearby secondary colour
+            </li>
+            <li>
+              orange
+              <ul>
+                <li>red & yellow</li>
+                <li>rgb (255, 127, 0)</li>
+              </ul>
+            </li>
+            <li>
+              spring green
+              <ul>
+                <li>cyan & green</li>
+                <li>rgb (127, 0, 255)</li>
+              </ul>
+            </li>
+            <li>
+              violet
+              <ul>
+                <li>magenta & blue</li>
+                <li>rgb (127, 0, 255)</li>
+              </ul>
+            </li>
+          </ul>
 
-    <section>
-      <h2>Complementary Colours</h2>
-      <ul>
-        <li>Two colours that are on opposite sides of the colour wheel</li>
-        <li>If two complementary colours are combined they produce grey</li>
-        <li>When two complementary colours are placed side by side they provide string visual contrast and appear brighter</li>
-      </ul>
+          <div class="container">
+            <div class="markers orange">orange</div>
+            <div class="markers spring-green">spring-green</div>
+            <div class="markers violet">violet</div>
+          </div>
 
-      <p>*** Notice that the red and cyan colors are very bright right next to each other. This contrast can be distracting if it's overused on a website, and can make text hard to read if it's placed on a complementary-colored background.
+          <h3>Other Tertiary Colors</h3>
+          <ul>
+            <li>
+              chartreuse green
+              <ul>
+                <li>green & yellow</li>
+                <li>rgb (127, 255, 0)</li>
+              </ul>
+            </li>
+            <li>
+              azure
+              <ul>
+                <li>blue & cyan</li>
+                <li>rgb (0, 127, 255)</li>
+              </ul>
+            </li>
 
-        It's better practice to choose one color as the dominant color, and use its complementary color as an accent to bring attention to certain content on the page.
-        
-         ***</p>
+            <li>
+              Rose
+              <ul>
+                <li>red & magenta</li>
+                <li>rgb (255, 0, 127)</li>
+              </ul>
+            </li>
+          </ul>
 
-      <p>We use complementary colours to attract the readers attention to certain parts of the webpage.</p>
+          <div class="container">
+            <div class="markers chartreuse-green">chartreuse green</div>
+            <div class="markers azure">azure</div>
+            <div class="markers rose">rose</div>
+          </div>
+        </div>
+      </section>
 
-      <div class="container">
-        <div class="markers red">RED</div>
-        <div class="markers cyan">CYAN</div>
-        <div class="markers black"></div>
-      </div>
-    </section>
+      <section>
+        <h2>Complementary Colours</h2>
+        <ul>
+          <li>Two colours that are on opposite sides of the colour wheel</li>
+          <li>If two complementary colours are combined they produce grey</li>
+          <li>
+            When two complementary colours are placed side by side they provide
+            string visual contrast and appear brighter
+          </li>
+        </ul>
 
-    <section>
-      <h2>HSL Colour Model</h2>
-      <h3>Hue Saturation Lightness</h3>
+        <p>
+          *** Notice that the red and cyan colors are very bright right next to
+          each other. This contrast can be distracting if it's overused on a
+          website, and can make text hard to read if it's placed on a
+          complementary-colored background. It's better practice to choose one
+          color as the dominant color, and use its complementary color as an
+          accent to bring attention to certain content on the page. ***
+        </p>
 
-      <h4>HSL function hsl()</h4>
-      <ul>
-        <li>It accepts three parameters(Hue, Saturation, Lightness</li>
-        <li>Hue => its like a circle. Red is at 0 degrees, Green at 120 degrees and Blue at 240 degrees</li>
-        <li>Saturation => its the intensity of the colour. 0% is low intensity or gray and 100% is full intensity or pure colour</li>
-        <li>Lightness => How bright a colour appears. 0% is for complete Black, 100% is for complete white and 50% is neutral</li>
-      </ul>
+        <p>
+          We use complementary colours to attract the readers attention to
+          certain parts of the webpage.
+        </p>
 
-      <img class="hue-wheel" src="./resources/images/hsl.png" alt="hue wheel 1">
-      <img class="hue-wheel" src="./resources/images/hue-wheel-300x300.jpg" alt="hue wheel 2">
-    </section>
-  </main>
-  
-  <footer>
-    <section>
-      <p>Page colour icon by:</p>
-      <a href="https://www.flaticon.com/free-icons/circle" title="circle icons">Circle icons created by Freepik - Flaticon</a>
-    </section>
-  </footer>
-</body>
+        <div class="container">
+          <div class="markers red">RED</div>
+          <div class="markers cyan">CYAN</div>
+          <div class="markers black"></div>
+        </div>
+      </section>
+
+      <section>
+        <h2>HSL Colour Model</h2>
+        <h3>Hue Saturation Lightness</h3>
+
+        <h4>HSL function hsl()</h4>
+        <ul>
+          <li>It accepts three parameters(Hue, Saturation, Lightness</li>
+          <li>
+            Hue => its like a circle. Red is at 0 degrees, Green at 120 degrees
+            and Blue at 240 degrees
+          </li>
+          <li>
+            Saturation => its the intensity of the colour. 0% is low intensity
+            or gray and 100% is full intensity or pure colour
+          </li>
+          <li>
+            Lightness => How bright a colour appears. 0% is for complete Black,
+            100% is for complete white and 50% is neutral
+          </li>
+        </ul>
+
+        <img
+          class="hue-wheel"
+          src="./resources/images/hsl.png"
+          alt="hue wheel 1"
+        />
+        <img
+          class="hue-wheel"
+          src="./resources/images/hue-wheel-300x300.jpg"
+          alt="hue wheel 2"
+        />
+      </section>
+    </main>
+
+    <button>
+      <a href="https://www.canva.com/colors/color-wheel/" target="_blank"
+        >Canva colour wheel</a
+      >
+    </button>
+    <img src="./resources/images/color-wheel_0.jpg" alt="a colour wheel" />
+
+    <footer>
+      <section>
+        <p>Page colour icon by:</p>
+        <a
+          href="https://www.flaticon.com/free-icons/circle"
+          title="circle icons"
+          >Circle icons created by Freepik - Flaticon</a
+        >
+      </section>
+    </footer>
+  </body>
 </html>
